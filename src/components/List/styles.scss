@@ -1,0 +1,76 @@
+.list {
+  padding: 24px 16px;
+  > :not(:last-child) {
+    margin-bottom: 16px;
+  }
+  background-color: white;
+  box-shadow: 1px 2px 4px 1px #d6d3d3;
+  border-radius: 2px;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  &.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  padding: 12px 8px;
+}
+
+.list-row--confirm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  padding: 30px 20px;
+}
+
+.list-row__column {
+  width: 100%;
+  padding: 0 8px;
+
+  &.overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.list-row__column-title {
+  color: #7d7d7d;
+  margin-bottom: 4px;
+}
+
+.list-row__item-data {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-row__item-input {
+  height: 25px;
+  width: 100%;
+}
+
+.list__action {
+  width: 80px;
+}
+
+.contact-list__avatar-column {
+  width: 300px  ;
+}
+
+.list__infinity-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
