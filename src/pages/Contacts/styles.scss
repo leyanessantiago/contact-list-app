@@ -1,0 +1,12 @@
+.contact-list {
+  padding: 20px 12px;
+
+  > .list {
+    height: calc(100vh - 194px);
+  }
+}
+
+.contact-list__search-input {
+  padding: 32px 40px;
+  background-color: black;
+}
